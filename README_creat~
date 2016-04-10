@@ -1,0 +1,15 @@
+#define S_IRWXU 0000700     /* -rwx------ */
+#define S_IREAD 0000400     /* read permission, owner */
+#define S_IRUSR S_IREAD
+#define S_IWRITE 0000200    /* write permission, owner */
+#define S_IWUSR S_IWRITE
+#define S_IEXEC 0000100     /* execute/search permission, owner */
+#define S_IXUSR S_IEXEC
+#define S_IRWXG 0000070     /* ----rwx--- */
+#define S_IRGRP 0000040     /* read permission, group */
+#define S_IWGRP 0000020     /* write    "         "   */
+#define S_IXGRP 0000010     /* execute/search "   "   */
+#define S_IRWXO 0000007     /* -------rwx */
+#define S_IROTH 0000004     /* read permission, other */
+#define S_IWOTH 0000002     /* write    "         "   */
+#define S_IXOTH 0000001     /* execute/search "   "   */
